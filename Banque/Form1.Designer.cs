@@ -71,6 +71,7 @@
             this.lblCompteDebit = new System.Windows.Forms.Label();
             this.lblEnregistrement = new System.Windows.Forms.Label();
             this.TabVirement = new System.Windows.Forms.TabPage();
+            this.lblMessageVirement = new System.Windows.Forms.Label();
             this.txbMontantVirement = new System.Windows.Forms.TextBox();
             this.cbxCreditVirement = new System.Windows.Forms.ComboBox();
             this.cbxDebitVirement = new System.Windows.Forms.ComboBox();
@@ -80,7 +81,7 @@
             this.lblCreditVirement = new System.Windows.Forms.Label();
             this.lblDebitVirement = new System.Windows.Forms.Label();
             this.lblVirement = new System.Windows.Forms.Label();
-            this.lblMessageVirement = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tab_OngletsApplications.SuspendLayout();
             this.tabAccueil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListeComptes)).BeginInit();
@@ -109,6 +110,7 @@
             // 
             // tabAccueil
             // 
+            this.tabAccueil.Controls.Add(this.label2);
             this.tabAccueil.Controls.Add(this.lblAgence);
             this.tabAccueil.Controls.Add(this.lblphraseagence);
             this.tabAccueil.Controls.Add(this.DgvListeComptes);
@@ -549,6 +551,15 @@
             this.TabVirement.Text = "Virement";
             this.TabVirement.UseVisualStyleBackColor = true;
             // 
+            // lblMessageVirement
+            // 
+            this.lblMessageVirement.AutoSize = true;
+            this.lblMessageVirement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessageVirement.Location = new System.Drawing.Point(196, 272);
+            this.lblMessageVirement.Name = "lblMessageVirement";
+            this.lblMessageVirement.Size = new System.Drawing.Size(0, 20);
+            this.lblMessageVirement.TabIndex = 9;
+            // 
             // txbMontantVirement
             // 
             this.txbMontantVirement.Location = new System.Drawing.Point(375, 225);
@@ -636,14 +647,15 @@
             this.lblVirement.TabIndex = 0;
             this.lblVirement.Text = "ENREGISTREMENT D\'UN VIREMENT";
             // 
-            // lblMessageVirement
+            // label2
             // 
-            this.lblMessageVirement.AutoSize = true;
-            this.lblMessageVirement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessageVirement.Location = new System.Drawing.Point(196, 272);
-            this.lblMessageVirement.Name = "lblMessageVirement";
-            this.lblMessageVirement.Size = new System.Drawing.Size(0, 20);
-            this.lblMessageVirement.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(282, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(478, 108);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "TEST GIT";
             // 
             // FrmBanque
             // 
@@ -727,6 +739,7 @@
         private System.Windows.Forms.Label lblVirement;
         private System.Windows.Forms.TextBox txbMontantVirement;
         private System.Windows.Forms.Label lblMessageVirement;
+        private System.Windows.Forms.Label label2;
     }
 }
 
